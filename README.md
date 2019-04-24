@@ -30,3 +30,12 @@ private void shareApp(){
         return stringId == 0 ? applicationInfo.nonLocalizedLabel.toString() : context.getString(stringId);
     }
 ```
+
+# My All app at Play store
+
+```
+    private void getMyAllApp() {
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(pref.myAllAppLink().get()));
+        startActivity(browserIntent);
+    }
+```
